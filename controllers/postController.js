@@ -55,14 +55,3 @@ exports.eliminarPost = async (req, res) => {
         res.status(500).json({ mensaje: 'Error al eliminar el post' });
     }
 };
-//busar 
-exports.buscarPosts = async(req, res) => {
-    try {
-        const { q } = req.query;
-        if(!q) {
-            return res.status(400).json({message:
-            'Parametro de busqueda requerido' });
-        }
-
-    }
-};
